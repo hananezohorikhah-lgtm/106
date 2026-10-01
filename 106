@@ -1,0 +1,23 @@
+٦- تابع ( ) max را که به شکل زیر اعلان میشود نوشته و آزمایش کنید. این تابع با استفاده از تابع (max (int, int مثال ۵_۵ بزرگترین عدد در بین چهار عدد صحيح داده شده را بر می گرداند.
+int max(int, int, int, int);
+
+پاسخ:
+#include <iostream>
+using namespace std;
+
+int max(int x, int y)
+{
+    return (x > y) ? x : y;
+}
+
+int max(int a, int b, int c, int d)
+{
+    return max(max(a, b), max(c, d));
+}
+
+int main()
+{
+    cout << max(8, 15, 4, 12);
+
+    return 0;
+}
